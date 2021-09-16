@@ -27,6 +27,10 @@
     imageParagraph.className = ""
    
     }
+    function changeItBack() {
+    imageParagraph = document.getElementById("blah")
+      imageParagraph.className = "mbr-text mbr-fonts-style display-7"
+    }
   </script>
   
   
@@ -141,7 +145,7 @@
     <div class="align-center container">
         <div class="row justify-content-center">
             <div class="col-12 col-lg-8">
-                <h1 onmouseover="javacscript:changeIt()" class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>My Website</strong></h1>
+                <h1 onmouseover="javacscript:changeIt()" onmouseout="javascript:changeItBack()" class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>My Website</strong></h1>
                 
                 <p id="blah" class="mbr-text mbr-fonts-style display-7">Hello, my name is Spencer Boebel and this is my project.</p>
                 <div class="mbr-section-btn mt-3"><a class="btn btn-success display-4" href="http://cnn.com">Go To CNN</a> <a class="btn btn-success display-4" href="http://foxnews.com">Go To Fox</a></div>
